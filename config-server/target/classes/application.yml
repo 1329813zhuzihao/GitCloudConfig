@@ -13,3 +13,4 @@ spring:
       server:
         git: #仓库地址
           uri: https://github.com/1329813zhuzihao/GitCloudConfig.git
+          clone-on-start: true  #启动时, 就clone仓库到本地, 默认是在配置首次请求时clone到本地

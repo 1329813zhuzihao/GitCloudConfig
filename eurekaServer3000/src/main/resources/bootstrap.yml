@@ -1,4 +1,6 @@
 spring:
   cloud:
     config:
-      name:
+      name: eureka-application
+      label: main
+      uri: http://localhost:8080/
