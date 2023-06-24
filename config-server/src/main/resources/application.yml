@@ -1,0 +1,16 @@
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+server:
+  port: 8080
+spring:
+  application:
+    name: testConfigServer
+
+  cloud:
+    config:
+      server:
+        git: #仓库地址
+          uri: https://github.com/1329813zhuzihao/GitCloudConfig.git
+          clone-on-start: true  #启动时, 就clone仓库到本地, 默认是在配置首次请求时clone到本地
